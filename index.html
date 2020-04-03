@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - PiggyVest</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="https://www.piggyvest.com"
+        ><img class="logo" src="./img/piggyvest-logo.svg" alt="piggyvest logo"
+      /></a>
+      <div class="card">
+        <div class="card-header">
+          <h2>Create a secure account</h2>
+          <p>Welcome to the future of Savings & Investment</p>
+        </div>
+
+        <form action="">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              name="full_name"
+              id="fullName"
+              placeholder="Full Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="form-group">
+            <label for="fullName">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="referer">Referrer Phone or Promo Code (Optional)</label>
+            <input
+              type="text"
+              name="referer"
+              id="referer"
+              placeholder="Referrer Phone or Code"
+            />
+          </div>
+          <div class="form-group">
+            <label for="aboutUs">How Did You Hear About Us? (Optional)</label>
+            <div class="custom-select">
+              <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+              <select name="aboutUs" id="aboutUs">
+                <option value="">Click To Select</option>
+                <option value="">Facebook</option>
+                <option value="">Twitter</option>
+                <option value="">Instagram</option>
+                <option value="">Friend/Family/Coworker Referer</option>
+                <option value="">Google Search</option>
+                <option value="">Play Store</option>
+                <option value="">Online Blog</option>
+                <option value="">Local Newspaper</option>
+                <option value="">At an Event</option>
+                <option value="">Other</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <button>Create Account</button>
+          </div>
+        </form>
+      </div>
+      <a class="login" href="https://dashboard.piggyvest.com/login"
+        >Already have an account? Log in</a
+      >
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

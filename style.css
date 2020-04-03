@@ -1,0 +1,234 @@
+:root {
+  --background-color: #122863;
+  --placeholder-color: #edf2f7;
+  --secondary-color: #203ea2;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background-color);
+  font-family: "Karla", sans-serif;
+  color: #4b559a;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  color: #083e9e;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: U8, sans-serif;
+}
+p {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+a {
+  font-size: 0.75rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.25rem 0.75rem;
+  font-weight: 400;
+  font-family: "Karla" sans-serif;
+  text-decoration: none;
+}
+
+a.login {
+  margin-top: 2rem;
+}
+
+a:hover {
+  color: rgb(179, 179, 179);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.card {
+  width: 91.67%;
+  max-width: 28rem;
+  background: #fff;
+  border-radius: 1.25rem 1.25rem 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  overflow-y: auto;
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 0.75rem;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+  line-height: 2;
+  font-weight: 700;
+  font-family: "U8" sans-serif;
+  font-size: 12px;
+}
+input {
+  color: #1a202c;
+  padding: 0.75rem 0.75rem 0.75rem 0.5rem;
+  border: none;
+  outline: none;
+  background: #edf2f7;
+  border-radius: 0.25rem;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+input::placeholder {
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: rgb(8, 62, 158);
+  width: 100%;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem 2.5rem 1rem 2.5rem;
+  font-weight: 700;
+  font-family: "U8" sans-serif;
+  border-radius: 0.75rem 0.75rem 0.75rem 0;
+  cursor: pointer;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+button:hover {
+  background: rgb(6, 43, 111);
+}
+
+.select-selected {
+  background-color: #edf2f7;
+  border-radius: 0.25rem;
+}
+
+.arrow {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-left: 1.3px solid #a8a9aa;
+  color: #a8a9aa;
+  font-size: 14px;
+  font-weight: 100;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  z-index: 1;
+  background: transparent;
+}
+
+.arrow:hover,
+.arrow:focus {
+  color: #3c3c3c;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #1a202c;
+  padding: 0.75rem;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  overflow-y: auto;
+  height: 150px;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  color: #fff;
+  background-color: rgb(38, 132, 255);
+}
+
+@media (min-width: 768px) {
+  input {
+    padding: 1rem;
+  }
+  .select-items div,
+  .select-selected {
+    padding: 1rem;
+  }
+
+  .arrow {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
